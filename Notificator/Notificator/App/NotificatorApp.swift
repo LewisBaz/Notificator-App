@@ -10,9 +10,11 @@ import SwiftData
 
 @main
 struct NotificatorApp: App {
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            ItemL.self,
+            SettingsDataModel.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +27,7 @@ struct NotificatorApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
         }
         .modelContainer(sharedModelContainer)
     }

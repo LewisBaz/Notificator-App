@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "safesfsymbols",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sparrowcode/SafeSFSymbols",
+      "state" : {
+        "revision" : "07f11f923b53f26cf9214800f8a397a87865f3ef",
+        "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "tabbar?tab=readme-ov-file#customization",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onl1ner/TabBar?tab=readme-ov-file#customization",
+      "state" : {
+        "revision" : "995e6bc32829d0a0f5300d6f49b654412068dbbe",
+        "version" : "1.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41813262B68F525003E2814 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41813252B68F525003E2814 /* ViewExtensions.swift */; };
+		F41813292B68F941003E2814 /* SafeSFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = F41813282B68F941003E2814 /* SafeSFSymbols */; };
+		F418132B2B690462003E2814 /* EnvironmentValuesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418132A2B690462003E2814 /* EnvironmentValuesExtensions.swift */; };
+		F46A319F2B65C2E5008C4C79 /* AppDeps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A319E2B65C2E5008C4C79 /* AppDeps.swift */; };
+		F46A31A12B65C9DF008C4C79 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A31A02B65C9DF008C4C79 /* SettingsViewModel.swift */; };
+		F46A31A32B65CA60008C4C79 /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A31A22B65CA60008C4C79 /* SettingsDataSource.swift */; };
+		F4AAC0C82B678A3000E60EBB /* AddNoteContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAC0C72B678A3000E60EBB /* AddNoteContentView.swift */; };
+		F4AAC0CA2B67939700E60EBB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAC0C92B67939700E60EBB /* MainViewModel.swift */; };
+		F4AAC0CC2B67B05700E60EBB /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAC0CB2B67B05700E60EBB /* AddNoteViewModel.swift */; };
+		F4AAC0CE2B67B0D100E60EBB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F4AAC0CD2B67B0D100E60EBB /* Localizable.xcstrings */; };
 		F4C3759B2B63B31600FF776D /* NotificatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3759A2B63B31600FF776D /* NotificatorApp.swift */; };
-		F4C3759D2B63B31600FF776D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3759C2B63B31600FF776D /* ContentView.swift */; };
-		F4C3759F2B63B31600FF776D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3759E2B63B31600FF776D /* Item.swift */; };
+		F4C3759D2B63B31600FF776D /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3759C2B63B31600FF776D /* MainContentView.swift */; };
+		F4C3759F2B63B31600FF776D /* ItemL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3759E2B63B31600FF776D /* ItemL.swift */; };
 		F4C375A12B63B31700FF776D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C375A02B63B31700FF776D /* Assets.xcassets */; };
 		F4C375A52B63B31700FF776D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C375A42B63B31700FF776D /* Preview Assets.xcassets */; };
 		F4C375AF2B63B31700FF776D /* NotificatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375AE2B63B31700FF776D /* NotificatorTests.swift */; };
 		F4C375B92B63B31700FF776D /* NotificatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375B82B63B31700FF776D /* NotificatorUITests.swift */; };
 		F4C375BB2B63B31700FF776D /* NotificatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375BA2B63B31700FF776D /* NotificatorUITestsLaunchTests.swift */; };
+		F4C375C92B63B64100FF776D /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = F4C375C82B63B64100FF776D /* TabBar */; };
+		F4C375D02B63B75100FF776D /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375CF2B63B75100FF776D /* TabBarItem.swift */; };
+		F4C375D22B63BC9000FF776D /* TabBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375D12B63BC9000FF776D /* TabBarStyle.swift */; };
+		F4C375D62B63C15900FF776D /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375D52B63C15900FF776D /* RGBColor.swift */; };
+		F4C375DB2B63C3CD00FF776D /* TabBarItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375DA2B63C3CD00FF776D /* TabBarItemStyle.swift */; };
+		F4C375DD2B63D2D500FF776D /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375DC2B63D2D500FF776D /* ColorSchemeManager.swift */; };
+		F4C375E12B63D39500FF776D /* ColorSchemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375E02B63D39500FF776D /* ColorSchemeModel.swift */; };
+		F4C375E42B63DB2600FF776D /* SettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375E32B63DB2600FF776D /* SettingsContentView.swift */; };
+		F4C375E72B63F51400FF776D /* SettingsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375E62B63F51400FF776D /* SettingsDataModel.swift */; };
+		F4C375E92B64022300FF776D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C375E82B64022300FF776D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41813252B68F525003E2814 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		F418132A2B690462003E2814 /* EnvironmentValuesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValuesExtensions.swift; sourceTree = "<group>"; };
+		F46A319E2B65C2E5008C4C79 /* AppDeps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeps.swift; sourceTree = "<group>"; };
+		F46A31A02B65C9DF008C4C79 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F46A31A22B65CA60008C4C79 /* SettingsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
+		F4AAC0C72B678A3000E60EBB /* AddNoteContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteContentView.swift; sourceTree = "<group>"; };
+		F4AAC0C92B67939700E60EBB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F4AAC0CB2B67B05700E60EBB /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
+		F4AAC0CD2B67B0D100E60EBB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F4C375972B63B31600FF776D /* Notificator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notificator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C3759A2B63B31600FF776D /* NotificatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatorApp.swift; sourceTree = "<group>"; };
-		F4C3759C2B63B31600FF776D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F4C3759E2B63B31600FF776D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F4C3759C2B63B31600FF776D /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		F4C3759E2B63B31600FF776D /* ItemL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemL.swift; sourceTree = "<group>"; };
 		F4C375A02B63B31700FF776D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C375A22B63B31700FF776D /* Notificator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notificator.entitlements; sourceTree = "<group>"; };
 		F4C375A42B63B31700FF776D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +76,15 @@
 		F4C375B42B63B31700FF776D /* NotificatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C375B82B63B31700FF776D /* NotificatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatorUITests.swift; sourceTree = "<group>"; };
 		F4C375BA2B63B31700FF776D /* NotificatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4C375CF2B63B75100FF776D /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		F4C375D12B63BC9000FF776D /* TabBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarStyle.swift; sourceTree = "<group>"; };
+		F4C375D52B63C15900FF776D /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		F4C375DA2B63C3CD00FF776D /* TabBarItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemStyle.swift; sourceTree = "<group>"; };
+		F4C375DC2B63D2D500FF776D /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
+		F4C375E02B63D39500FF776D /* ColorSchemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeModel.swift; sourceTree = "<group>"; };
+		F4C375E32B63DB2600FF776D /* SettingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContentView.swift; sourceTree = "<group>"; };
+		F4C375E62B63F51400FF776D /* SettingsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataModel.swift; sourceTree = "<group>"; };
+		F4C375E82B64022300FF776D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41813292B68F941003E2814 /* SafeSFSymbols in Frameworks */,
+				F4C375C92B63B64100FF776D /* TabBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +114,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41813242B68F50F003E2814 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F41813252B68F525003E2814 /* ViewExtensions.swift */,
+				F418132A2B690462003E2814 /* EnvironmentValuesExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4AAC0C62B678A1A00E60EBB /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				F4AAC0C72B678A3000E60EBB /* AddNoteContentView.swift */,
+				F4AAC0CB2B67B05700E60EBB /* AddNoteViewModel.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		F4C3758E2B63B31600FF776D = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +155,12 @@
 		F4C375992B63B31600FF776D /* Notificator */ = {
 			isa = PBXGroup;
 			children = (
-				F4C3759A2B63B31600FF776D /* NotificatorApp.swift */,
-				F4C3759C2B63B31600FF776D /* ContentView.swift */,
-				F4C3759E2B63B31600FF776D /* Item.swift */,
-				F4C375A02B63B31700FF776D /* Assets.xcassets */,
+				F4C375CD2B63B6E900FF776D /* App */,
+				F4C3759E2B63B31600FF776D /* ItemL.swift */,
 				F4C375A22B63B31700FF776D /* Notificator.entitlements */,
 				F4C375A32B63B31700FF776D /* Preview Content */,
+				F4C375CE2B63B6FB00FF776D /* Resources */,
+				F4C375CA2B63B6C900FF776D /* Source */,
 			);
 			path = Notificator;
 			sourceTree = "<group>";
@@ -132,6 +190,118 @@
 			path = NotificatorUITests;
 			sourceTree = "<group>";
 		};
+		F4C375CA2B63B6C900FF776D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375E82B64022300FF776D /* Constants.swift */,
+				F41813242B68F50F003E2814 /* Extensions */,
+				F4C375D42B63C14300FF776D /* Helpers */,
+				F4C375DE2B63D37800FF776D /* Managers */,
+				F4C375CB2B63B6D200FF776D /* Screens */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F4C375CB2B63B6D200FF776D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F4AAC0C62B678A1A00E60EBB /* Add */,
+				F4C375CC2B63B6E000FF776D /* Main */,
+				F4C375E22B63DB1700FF776D /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F4C375CC2B63B6E000FF776D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3759C2B63B31600FF776D /* MainContentView.swift */,
+				F4AAC0C92B67939700E60EBB /* MainViewModel.swift */,
+				F4C375D32B63BDE000FF776D /* TabBar */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F4C375CD2B63B6E900FF776D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4C3759A2B63B31600FF776D /* NotificatorApp.swift */,
+				F46A319E2B65C2E5008C4C79 /* AppDeps.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4C375CE2B63B6FB00FF776D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375A02B63B31700FF776D /* Assets.xcassets */,
+				F4AAC0CD2B67B0D100E60EBB /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4C375D32B63BDE000FF776D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375CF2B63B75100FF776D /* TabBarItem.swift */,
+				F4C375D12B63BC9000FF776D /* TabBarStyle.swift */,
+				F4C375DA2B63C3CD00FF776D /* TabBarItemStyle.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F4C375D42B63C14300FF776D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375D72B63C2FC00FF776D /* Colors */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F4C375D72B63C2FC00FF776D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375D52B63C15900FF776D /* RGBColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		F4C375DE2B63D37800FF776D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375DF2B63D38500FF776D /* Color */,
+				F4C375E52B63F4E400FF776D /* Settings */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F4C375DF2B63D38500FF776D /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375DC2B63D2D500FF776D /* ColorSchemeManager.swift */,
+				F4C375E02B63D39500FF776D /* ColorSchemeModel.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		F4C375E22B63DB1700FF776D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375E32B63DB2600FF776D /* SettingsContentView.swift */,
+				F46A31A02B65C9DF008C4C79 /* SettingsViewModel.swift */,
+				F46A31A22B65CA60008C4C79 /* SettingsDataSource.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F4C375E52B63F4E400FF776D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4C375E62B63F51400FF776D /* SettingsDataModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +318,10 @@
 			dependencies = (
 			);
 			name = Notificator;
+			packageProductDependencies = (
+				F4C375C82B63B64100FF776D /* TabBar */,
+				F41813282B68F941003E2814 /* SafeSFSymbols */,
+			);
 			productName = Notificator;
 			productReference = F4C375972B63B31600FF776D /* Notificator.app */;
 			productType = "com.apple.product-type.application";
@@ -218,8 +392,13 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F4C3758E2B63B31600FF776D;
+			packageReferences = (
+				F4C375C72B63B64100FF776D /* XCRemoteSwiftPackageReference "TabBar" */,
+				F41813272B68F941003E2814 /* XCRemoteSwiftPackageReference "SafeSFSymbols" */,
+			);
 			productRefGroup = F4C375982B63B31600FF776D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,6 +417,7 @@
 			files = (
 				F4C375A52B63B31700FF776D /* Preview Assets.xcassets in Resources */,
 				F4C375A12B63B31700FF776D /* Assets.xcassets in Resources */,
+				F4AAC0CE2B67B0D100E60EBB /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +442,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C3759D2B63B31600FF776D /* ContentView.swift in Sources */,
-				F4C3759F2B63B31600FF776D /* Item.swift in Sources */,
+				F4C375DD2B63D2D500FF776D /* ColorSchemeManager.swift in Sources */,
+				F4C375D22B63BC9000FF776D /* TabBarStyle.swift in Sources */,
+				F4C375E12B63D39500FF776D /* ColorSchemeModel.swift in Sources */,
+				F4C375E72B63F51400FF776D /* SettingsDataModel.swift in Sources */,
+				F46A31A32B65CA60008C4C79 /* SettingsDataSource.swift in Sources */,
+				F46A319F2B65C2E5008C4C79 /* AppDeps.swift in Sources */,
+				F4AAC0CC2B67B05700E60EBB /* AddNoteViewModel.swift in Sources */,
+				F4C375E42B63DB2600FF776D /* SettingsContentView.swift in Sources */,
+				F4C3759D2B63B31600FF776D /* MainContentView.swift in Sources */,
+				F4AAC0CA2B67939700E60EBB /* MainViewModel.swift in Sources */,
+				F4C3759F2B63B31600FF776D /* ItemL.swift in Sources */,
+				F41813262B68F525003E2814 /* ViewExtensions.swift in Sources */,
+				F4C375DB2B63C3CD00FF776D /* TabBarItemStyle.swift in Sources */,
+				F4C375D62B63C15900FF776D /* RGBColor.swift in Sources */,
+				F4C375D02B63B75100FF776D /* TabBarItem.swift in Sources */,
+				F418132B2B690462003E2814 /* EnvironmentValuesExtensions.swift in Sources */,
 				F4C3759B2B63B31600FF776D /* NotificatorApp.swift in Sources */,
+				F4C375E92B64022300FF776D /* Constants.swift in Sources */,
+				F4AAC0C82B678A3000E60EBB /* AddNoteContentView.swift in Sources */,
+				F46A31A12B65C9DF008C4C79 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +818,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F41813272B68F941003E2814 /* XCRemoteSwiftPackageReference "SafeSFSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparrowcode/SafeSFSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+		F4C375C72B63B64100FF776D /* XCRemoteSwiftPackageReference "TabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onl1ner/TabBar?tab=readme-ov-file#customization";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F41813282B68F941003E2814 /* SafeSFSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41813272B68F941003E2814 /* XCRemoteSwiftPackageReference "SafeSFSymbols" */;
+			productName = SafeSFSymbols;
+		};
+		F4C375C82B63B64100FF776D /* TabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C375C72B63B64100FF776D /* XCRemoteSwiftPackageReference "TabBar" */;
+			productName = TabBar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4C3758F2B63B31600FF776D /* Project object */;
 }
