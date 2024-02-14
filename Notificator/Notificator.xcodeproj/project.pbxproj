@@ -10,9 +10,14 @@
 		F41813262B68F525003E2814 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41813252B68F525003E2814 /* ViewExtensions.swift */; };
 		F41813292B68F941003E2814 /* SafeSFSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = F41813282B68F941003E2814 /* SafeSFSymbols */; };
 		F418132B2B690462003E2814 /* EnvironmentValuesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418132A2B690462003E2814 /* EnvironmentValuesExtensions.swift */; };
+		F41CAF942B7B9D5D00DCE608 /* PreviewColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CAF932B7B9D5D00DCE608 /* PreviewColorsHelper.swift */; };
 		F46A319F2B65C2E5008C4C79 /* AppDeps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A319E2B65C2E5008C4C79 /* AppDeps.swift */; };
 		F46A31A12B65C9DF008C4C79 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A31A02B65C9DF008C4C79 /* SettingsViewModel.swift */; };
 		F46A31A32B65CA60008C4C79 /* SettingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A31A22B65CA60008C4C79 /* SettingsDataSource.swift */; };
+		F48EEC352B6B9083007FFA9B /* RepeatNoteContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EEC342B6B9083007FFA9B /* RepeatNoteContentView.swift */; };
+		F48EEC382B6BA378007FFA9B /* NotesListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EEC372B6BA378007FFA9B /* NotesListContentView.swift */; };
+		F48EEC3B2B6BA674007FFA9B /* NoteRepeatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EEC3A2B6BA674007FFA9B /* NoteRepeatType.swift */; };
+		F48EEC3D2B6BA707007FFA9B /* NoteRepeatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EEC3C2B6BA707007FFA9B /* NoteRepeatModels.swift */; };
 		F4AAC0C82B678A3000E60EBB /* AddNoteContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAC0C72B678A3000E60EBB /* AddNoteContentView.swift */; };
 		F4AAC0CA2B67939700E60EBB /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAC0C92B67939700E60EBB /* MainViewModel.swift */; };
 		F4AAC0CC2B67B05700E60EBB /* AddNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AAC0CB2B67B05700E60EBB /* AddNoteViewModel.swift */; };
@@ -57,9 +62,14 @@
 /* Begin PBXFileReference section */
 		F41813252B68F525003E2814 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		F418132A2B690462003E2814 /* EnvironmentValuesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValuesExtensions.swift; sourceTree = "<group>"; };
+		F41CAF932B7B9D5D00DCE608 /* PreviewColorsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewColorsHelper.swift; sourceTree = "<group>"; };
 		F46A319E2B65C2E5008C4C79 /* AppDeps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeps.swift; sourceTree = "<group>"; };
 		F46A31A02B65C9DF008C4C79 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F46A31A22B65CA60008C4C79 /* SettingsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataSource.swift; sourceTree = "<group>"; };
+		F48EEC342B6B9083007FFA9B /* RepeatNoteContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatNoteContentView.swift; sourceTree = "<group>"; };
+		F48EEC372B6BA378007FFA9B /* NotesListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListContentView.swift; sourceTree = "<group>"; };
+		F48EEC3A2B6BA674007FFA9B /* NoteRepeatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepeatType.swift; sourceTree = "<group>"; };
+		F48EEC3C2B6BA707007FFA9B /* NoteRepeatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepeatModels.swift; sourceTree = "<group>"; };
 		F4AAC0C72B678A3000E60EBB /* AddNoteContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteContentView.swift; sourceTree = "<group>"; };
 		F4AAC0C92B67939700E60EBB /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F4AAC0CB2B67B05700E60EBB /* AddNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +131,31 @@
 				F418132A2B690462003E2814 /* EnvironmentValuesExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F48EEC332B6B9069007FFA9B /* RepeatNote */ = {
+			isa = PBXGroup;
+			children = (
+				F48EEC342B6B9083007FFA9B /* RepeatNoteContentView.swift */,
+			);
+			path = RepeatNote;
+			sourceTree = "<group>";
+		};
+		F48EEC362B6BA364007FFA9B /* NotesList */ = {
+			isa = PBXGroup;
+			children = (
+				F48EEC372B6BA378007FFA9B /* NotesListContentView.swift */,
+			);
+			path = NotesList;
+			sourceTree = "<group>";
+		};
+		F48EEC392B6BA65A007FFA9B /* NoteRepeat */ = {
+			isa = PBXGroup;
+			children = (
+				F48EEC3A2B6BA674007FFA9B /* NoteRepeatType.swift */,
+				F48EEC3C2B6BA707007FFA9B /* NoteRepeatModels.swift */,
+			);
+			path = NoteRepeat;
 			sourceTree = "<group>";
 		};
 		F4AAC0C62B678A1A00E60EBB /* Add */ = {
@@ -207,6 +242,8 @@
 			children = (
 				F4AAC0C62B678A1A00E60EBB /* Add */,
 				F4C375CC2B63B6E000FF776D /* Main */,
+				F48EEC362B6BA364007FFA9B /* NotesList */,
+				F48EEC332B6B9069007FFA9B /* RepeatNote */,
 				F4C375E22B63DB1700FF776D /* Settings */,
 			);
 			path = Screens;
@@ -254,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C375D72B63C2FC00FF776D /* Colors */,
+				F48EEC392B6BA65A007FFA9B /* NoteRepeat */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -262,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C375D52B63C15900FF776D /* RGBColor.swift */,
+				F41CAF932B7B9D5D00DCE608 /* PreviewColorsHelper.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -447,10 +486,13 @@
 				F4C375E12B63D39500FF776D /* ColorSchemeModel.swift in Sources */,
 				F4C375E72B63F51400FF776D /* SettingsDataModel.swift in Sources */,
 				F46A31A32B65CA60008C4C79 /* SettingsDataSource.swift in Sources */,
+				F41CAF942B7B9D5D00DCE608 /* PreviewColorsHelper.swift in Sources */,
 				F46A319F2B65C2E5008C4C79 /* AppDeps.swift in Sources */,
+				F48EEC382B6BA378007FFA9B /* NotesListContentView.swift in Sources */,
 				F4AAC0CC2B67B05700E60EBB /* AddNoteViewModel.swift in Sources */,
 				F4C375E42B63DB2600FF776D /* SettingsContentView.swift in Sources */,
 				F4C3759D2B63B31600FF776D /* MainContentView.swift in Sources */,
+				F48EEC352B6B9083007FFA9B /* RepeatNoteContentView.swift in Sources */,
 				F4AAC0CA2B67939700E60EBB /* MainViewModel.swift in Sources */,
 				F4C3759F2B63B31600FF776D /* ItemL.swift in Sources */,
 				F41813262B68F525003E2814 /* ViewExtensions.swift in Sources */,
@@ -458,7 +500,9 @@
 				F4C375D62B63C15900FF776D /* RGBColor.swift in Sources */,
 				F4C375D02B63B75100FF776D /* TabBarItem.swift in Sources */,
 				F418132B2B690462003E2814 /* EnvironmentValuesExtensions.swift in Sources */,
+				F48EEC3B2B6BA674007FFA9B /* NoteRepeatType.swift in Sources */,
 				F4C3759B2B63B31600FF776D /* NotificatorApp.swift in Sources */,
+				F48EEC3D2B6BA707007FFA9B /* NoteRepeatModels.swift in Sources */,
 				F4C375E92B64022300FF776D /* Constants.swift in Sources */,
 				F4AAC0C82B678A3000E60EBB /* AddNoteContentView.swift in Sources */,
 				F46A31A12B65C9DF008C4C79 /* SettingsViewModel.swift in Sources */,

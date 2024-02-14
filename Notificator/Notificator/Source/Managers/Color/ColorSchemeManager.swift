@@ -15,6 +15,10 @@ enum AppColorScheme: Int {
 
 final class ColorSchemeManager: ObservableObject {
     
+    private init() {}
+    
+    static let shared = ColorSchemeManager() 
+    
     // MARK: - Published Properties
   
     @Published var colorSheme: AppColorScheme = .blue

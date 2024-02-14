@@ -16,8 +16,12 @@ final class AddNoteViewModel: ObservableObject {
     @Published var isTimePickerVisible = false
     @Published var selectedDate = Date()
     @Published var selectedTime = Date()
+    @Published var selectedRepeatType = String()
     @Published var dateText = ""
     @Published var timeText = ""
+    @Published var repeatText = ""
+    @Published var isOpeningRepeatScreen = false
+    @Published var repeatObjects: [NoteRepeating]
     
     // MARK: - State Properties
     
@@ -28,7 +32,23 @@ final class AddNoteViewModel: ObservableObject {
     
     private lazy var dateFormatter = DateFormatter()
     
+    // MARK: - Init
+    
+    init() {
+        repeatObjects = NoteRepeatType.allCases.map({ $0.make() })
+    }
+    
     // MARK: - Public Methods
+    
+    func updateDateTextIfNeeded(selectedDate: Date) {
+        guard dateText == "" else { return }
+        updateDateText(selectedDate: selectedDate)
+    }
+    
+    func updateTimeTextIfNeeded(selectedTime: Date) {
+        guard timeText == "" else { return }
+        updateTimeText(selectedTime: selectedTime)
+    }
     
     func updateDateText(selectedDate: Date) {
         dateText = getDateString(from: selectedDate)

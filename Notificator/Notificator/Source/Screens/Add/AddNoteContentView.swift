@@ -10,25 +10,24 @@ import SafeSFSymbols
 
 struct AddNoteContentView: View {
     
-    @Environment(\.isPreview) var isPreview
-    
     // MARK: - Binding Properties
     
     @Binding var closeView: Bool
     
-    // MARK: - EnvironmentObject Properties
-    
-    @EnvironmentObject var colorSchemeManager: ColorSchemeManager
-    
     // MARK: - StateObject Properties
     
     @StateObject var viewModel = AddNoteViewModel()
+    @StateObject var previewColorsHelper = PreviewColorsHelper(isPreview: Constants.isPreview)
     
     // MARK: - Body
     
     var body: some View {
         ScrollView {
             HStack {
+                Text("New Note")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.leading, 20)
                 Spacer()
                 Button {
                     closeView.toggle()
@@ -36,7 +35,7 @@ struct AddNoteContentView: View {
                     Image(.xmark)
                         .resizable()
                         .frame(width: 20, height: 20)
-                        .foregroundStyle(getAccentColor())
+                        .foregroundStyle(previewColorsHelper.getAccentColor())
                 }
                 .padding(20)
             }
@@ -78,7 +77,7 @@ struct AddNoteContentView: View {
                             viewModel.updateDateText(selectedDate: newValue)
                         }
                         .onAppear(perform: {
-                            viewModel.updateDateText(selectedDate: Date())
+                            viewModel.updateDateTextIfNeeded(selectedDate: Date())
                         })
                 }
                 HStack(alignment: .center, spacing: 16, content: {
@@ -101,9 +100,23 @@ struct AddNoteContentView: View {
                             viewModel.updateTimeText(selectedTime: newValue)
                         }
                         .onAppear(perform: {
-                            viewModel.updateTimeText(selectedTime: Date())
+                            viewModel.updateTimeTextIfNeeded(selectedTime: Date())
                         })
                 }
+                HStack(alignment: .center, spacing: 16, content: {
+                    Image(.repeat)
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                        .font(.title2)
+                    NavigationLink(destination: EmptyView()) {
+                        Button {
+                            viewModel.isOpeningRepeatScreen = true
+                        } label: {
+                            Text(viewModel.repeatText.isEmpty ? viewModel.defaultDateTimeButtonText : viewModel.repeatText)
+                        }
+                    }
+                    Spacer()
+                })
             }
             .padding(20)
             Button("Save") {
@@ -112,34 +125,15 @@ struct AddNoteContentView: View {
             .padding(10)
             .font(.title3)
             .foregroundStyle(.white)
-            .background(RoundedRectangle(cornerRadius: 12).fill(getMainColor()))
+            .background(RoundedRectangle(cornerRadius: 12).fill(previewColorsHelper.getMainColor()))
         }
         .onAppear(perform: {
             
         })
         .scrollDismissesKeyboard(.immediately)
         .padding(.bottom, 50)
-    }
-}
-
-// MARK: - Private Methods
-
-private extension AddNoteContentView {
-    
-    func getAccentColor() -> Color {
-        if isPreview {
-            return .blue
-        } else {
-            return colorSchemeManager.accent
-        }
-    }
-    
-    func getMainColor() -> Color {
-        if isPreview {
-            return .blue
-        } else {
-            return colorSchemeManager.main
-        }
+        .navigationDestination(isPresented: $viewModel.isOpeningRepeatScreen, destination: { RepeatNoteContentView(selectedRepeatText: $viewModel.repeatText, repeatObjects: $viewModel.repeatObjects)
+        })
     }
 }
 

@@ -20,37 +20,41 @@ struct MainContentView: View {
     
     // MARK: - StateObject Properties
     
-    @StateObject var colorSchemeManager = ColorSchemeManager()
+    @StateObject var colorSchemeManager = ColorSchemeManager.shared
     
     // MARK: - Body
     
     var body: some View {
-        TabBar(selection: $viewModel.selection, visibility: $viewModel.visibility) {
-            Text("First")
-                .tabItem(for: TabBarItem.list)
-            
-            Text("")
-                .sheet(isPresented: $viewModel.showingSheet, content: {
-                    AddNoteContentView(closeView: $viewModel.showingSheet)
-                        .environmentObject(colorSchemeManager)
-                })
-                .tabItem(for: TabBarItem.add)
-            
-            SettingsContentView(viewModel: viewModel.settingsViewModel)
-                .environmentObject(colorSchemeManager)
-                .tabItem(for: TabBarItem.settings)
-        }
-        .tabBar(style: AppTabBarStyle(colorSchemeManager))
-        .tabItem(style: AppTabBarItemStyle(colorSchemeManager))
-        .onAppear {
-            setAppTheme()
-        }
-        .onChange(of: viewModel.selection) { oldValue, newValue in
-            viewModel.showingSheet = newValue == .add
-        }
-        .onChange(of: viewModel.showingSheet) { oldValue, newValue in
-            guard newValue == false else { return }
-            viewModel.selection = .list
+        NavigationStack {
+            TabBar(selection: $viewModel.selection, visibility: $viewModel.visibility) {
+                NotesListContentView()
+                    .tabItem(for: TabBarItem.list)
+                
+                Text("")
+                    .sheet(isPresented: $viewModel.showingSheet, content: {
+                        NavigationStack {
+                            AddNoteContentView(closeView: $viewModel.showingSheet)
+                                .environmentObject(colorSchemeManager)
+                        }
+                    })
+                    .tabItem(for: TabBarItem.add)
+                
+                SettingsContentView(viewModel: viewModel.settingsViewModel)
+                    .environmentObject(colorSchemeManager)
+                    .tabItem(for: TabBarItem.settings)
+            }
+            .tabBar(style: AppTabBarStyle(colorSchemeManager))
+            .tabItem(style: AppTabBarItemStyle(colorSchemeManager))
+            .onAppear {
+                setAppTheme()
+            }
+            .onChange(of: viewModel.selection) { oldValue, newValue in
+                viewModel.showingSheet = newValue == .add
+            }
+            .onChange(of: viewModel.showingSheet) { oldValue, newValue in
+                guard newValue == false else { return }
+                viewModel.selection = .list
+            }
         }
     }
 }
